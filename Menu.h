@@ -15,11 +15,26 @@ class Menu {
 private:
     arreglo<Usuario> usuarios;
     void pedirFecha(Fecha &f);
+    unsigned int buscar_id();
+
+    void pedirNombre(Usuario &s);
+    void pedirApellidos(Usuario &s);
+    void pedirCorreo(Usuario &s);
+    void pedirPassword(Usuario &s);
+    void pedirId(Usuario &s);
+    void pedirFechaRegistro(Usuario &s);
+    void pedirFechaNacimiento(Usuario &s);
+
 
 public:
     Menu();
     void registrar();
     void mostrar();
+    void eliminar();
+
+    void modificar();
+
+    void buscar();
 };
 
 
